@@ -9,6 +9,8 @@ footer {
     text-decoration: none;
     --background-color:#757575;
 }
+
+
 body {
     color:  var(--text-color);
     background-color: var(--background-color);
@@ -27,25 +29,52 @@ body {
         }
     
 
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1230px;
+    outline: 2px solid tomato;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
 
     
+}
+    
+.main-nav {
+    display: flex;
+    align-items: center;
+        
+}
 
 
 .web {
-    font-family: Raleway;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.2;
-    color: #2196F3;
-    letter-spacing: 0.03cm;
+font-family: Raleway;
+display: flex;
+align-items: center;
+margin-right: 93px;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+color: #2196F3;
+    
+    
 }
 .studio
 {
-    font-family: Raleway;
-    font-weight: bold;
-    font-size: 26px;
-    color: black;
-    letter-spacing: 0.03;
+font-family: Raleway;
+display: flex;
+align-items: center;
+margin-right: 93px;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+color: black;
 
 
 }
@@ -57,6 +86,10 @@ body {
     line-height: 16px;
     letter-spacing: 0.02em;
     color: #212121;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    flex-direction: row;
+    
 
 }
 .header-list:hover,
@@ -65,12 +98,24 @@ body {
 
 
 }
+
+.contact {
+    display: flex;    
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 30px;
+}
+
+
 .mail-contact{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding-right: 50px;
     color: #2196f3  
+    
 }
 .tel-contact {
     font-weight: 500;
@@ -84,55 +129,97 @@ body {
     color: #2196f3;
 }
 
+.site-nav {
+    display: flex;
+    margin-left: 87.19px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.site-nav .item {
+    
+   /* margin-right: 46.88px; */
+
+}
+/*.site-nav .item:last-child {
+    margin-right: 0;
+}*/
+
+.site-nav .item:not(:last-child) {
+    margin-right: 46.88px;
+}
+
+
+
 .effective {
    background-color: black;
-   text-align: center;
    padding-top: 200px;
    padding-bottom: 200px;
+   max-width: 1600px;
+   margin: 0;
 }
 
 .effective-solution-title {
-    color: white;
-    font-size: 44px;
-    line-height: 1.4;
-    letter-spacing: 0.06cm;
-    text-align: center;
-    text-transform: uppercase;
     font-weight: 900;
-    width: 696px;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06cm;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 650px;
+    margin: 0 auto;
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
 
 
 }
 
 .effective-solution-title-button {
-     text-decoration: none;
-     font-size: inherit;
-     font-weight: 700;
-     font-size: 16px;
-     line-height: 1.86;
-     letter-spacing: 0.06cm;
-     cursor: pointer;
-     color: white;
-     background-color: #2196f3;
-     padding: 10px, 32px;
-     border-radius: 4px;
-     border: none;
-
-
-   
-
-
+    padding: 10px 32px;
+    border-radius: 4px;
+    background-color: #2196f3;
+    box-shadow: 0px 4px rgba(0, 0, 0, 15);
+    margin: 0 auto;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06cm;
+    color: white;
+    cursor: pointer;
 }
+.effective-solution-title-button:hover,
+.effective-solution-title-button:focus
+
+
 .advantages {
+    padding-bottom: 0;
+   }
+
+.container {
+}
+
+.rezerv {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
 
 }
-.rezerv {
-    visibility: hidden;
-}
+
+.advant {
+    display: flex;
+    justify-content: space-between;
+    
+    }
+
+.item :not(:last-child) {
+   margin-right: 30px;
+
+   }
+ 
 .advantages-list {
+    display: inline;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -141,8 +228,10 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: black;
+    margin-bottom: 10px;
+
     
-}
+    }
 .advantages-list-1 {
     font-family: Roboto;
     font-style: normal;
@@ -150,73 +239,90 @@ body {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-
     color: grey;
+    
 
 }
+
+.photos {
+    display:flex;
+}
+
+    
 .tasks {
+  
   
 }
 .our-task {
-    font-family: Roboto;
-    font-style: normal;
+    margin-top: 94px;
+    margin-bottom: 50px;
     font-weight: bold;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16px;
     text-align: center;
     letter-spacing: 0.03em;
+    color: #212121;
+    
 
-color: #212121;
+    }
+
+.team,
+.photos {
+    display: flex;
+    justify-content: space-between;
+    
 }
- .team-list {
 
- }
+.our-team {
+    background-color: #f4f5fa;
+
+}
+
+ .team-list {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 90px) / 4);
+    
+}
+
 
  .team-name {
-     
-     font-size: 16px;
-     line-height: 1.19;
-     letter-spacing: 0.03cm;
-     counter-reset: #212121;
 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-align: center;
+   
+
+     
  }
 
  .team-position {
-     font-weight: 500;
-     font-size: 16px;
-     line-height: 1.19;
-     letter-spacing: 0.03cm;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+     
  }
+
+ 
 
  .footer{
  background-color:black;
-    
+ padding-bottom: 60px;
+ padding-top: 60px;
+ padding-left: 0px;
+ padding-right: 0;
 }
- 
- .web-footer {
-    font-family: Raleway;
-    font-weight: bold;
-    letter-spacing: 0.03cm;
-    font-size: 26px;
-    line-height: 1.2;
-    color: #2196f3
-   
 
- }
- .studio-footer{
-    font-family: Raleway;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.2cm;
-    color: white;
-    letter-spacing: 0.03;
- }
- 
- .footer-address {
-    
- }
- .footer-contact {
-     font-style: normal;
+ .footer-left-box.web-footer {
+     margin-bottom: 20px;
+     display: block;
  }
  .address {
     font-family: Roboto;
@@ -228,34 +334,41 @@ color: #212121;
     color: #FFFFFF;
 
  }
-
-
- .footer-contact {
-
- }
- .contact-mail {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+ .address a {
     color: rgba(255, 255, 255, 0.6);
 
 
  }
- .contact-tel {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+ 
+ .web-footer {
+font-family: Raleway;
+display: flex;
+align-items: center;
+margin-right: 93px;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+color: #2196F3;
     
-
-
+    
+   }
+ .studio-footer{
+font-family: Raleway;
+display: flex;
+align-items: center;
+margin-right: 93px;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+color: white;    
+    
  }
+ 
+ 
  .footercontact:hover,
  .footercontact:focus {
      color: #2196f3
@@ -275,11 +388,20 @@ color: #212121;
 .button-primary:focus {
     color: #188ce8;
     text-decoration: none;
+    cursor: pointer;
+
+    
 
 }
 
 .portfolio-box-list {
+    
+    padding-left: 215px;
+    padding-right: 215px;
+    padding-bottom: 94px;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .portfolio-title {
@@ -338,7 +460,7 @@ color: #212121;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
 
@@ -353,7 +475,7 @@ color: #212121;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 
@@ -364,7 +486,7 @@ color: #212121;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 
