@@ -16,6 +16,7 @@ body {
     background-color: var(--background-color);
     line-height: 1.2;
     font-family: Roboto, sans-serif;
+    margin: auto 0;
     
      }
         h1,
@@ -53,6 +54,10 @@ body {
 .header {
     border-bottom: 1px solid #ececec;
   }
+  .page-header {
+      border-bottom: 1px solid #EEEEEE;
+
+  }
   
 .header .container {
     display: flex;
@@ -73,7 +78,6 @@ body {
     font-family: "Raleway", sans-serif;
     display: flex;
     align-items: center;
-    margin-right: 93px;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.2;
@@ -235,6 +239,9 @@ background-color: #188ce8;
    margin-right: 30px;
 
    }
+.advantages {
+    padding: 94px 0;
+}
  
 .advantages-list {
     font-weight: bold;
@@ -323,6 +330,10 @@ background-color: #188ce8;
     
      
  }
+ .footer-address {
+   padding-left: 0;
+
+ }
 
  
 
@@ -359,7 +370,6 @@ background-color: #188ce8;
 font-family: Raleway;
 display: flex;
 align-items: center;
-margin-right: 93px;
 font-style: normal;
 font-weight: bold;
 font-size: 26px;
@@ -397,6 +407,8 @@ color: white;
     display: flex;
     justify-content: center;
     list-style: none;
+    margin-bottom: 34px;
+
 }
 
 .tab {
@@ -413,6 +425,7 @@ color: white;
     letter-spacing: 0.03cm;
     color: #212121;
     cursor: pointer;
+    border: none;
 }
 
 .active,
@@ -428,17 +441,19 @@ color: white;
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
+    margin-bottom: -30px;
 
 }
 .portfolio-list { 
-    margin-top: 30px;
     width: calc ((100% - 60px) / 3);
+    margin-bottom: 30px;
+    outline: 1px solid #EEEEEE;
+    
 
 }
 .partfolio-info {
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
-    border-top: none;
+    
 
 }
 .portfolio-title {
@@ -460,8 +475,11 @@ color: white;
    font-weight: normal;
    font-size: 16px;
    line-height: 30px;
+   letter-spacing: 0.03cm;
    color: #757575;
 }
+
+
 
 
 
